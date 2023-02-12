@@ -1,2 +1,3 @@
 # this-fucking-react.js
-loading ...
+
+## Crypto Tracker App : [Live](https://chinmay29hub-crypto-tracker.netlify.app)
