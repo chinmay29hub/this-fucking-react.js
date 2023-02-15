@@ -16,6 +16,7 @@ function Top() {
             <Nav.Link as={Link} to="/">Curiosity Rover</Nav.Link>
             <Nav.Link as={Link} to="/opportunity">Opportunity Rover</Nav.Link>
             <Nav.Link as={Link} to="/spirit">Spirit Rover</Nav.Link>
+            <Nav.Link as={Link} to="/allphotos">Photos By Date</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -43,7 +43,7 @@ export default class Curiosity extends Component {
             <Top />
             <div className='app'>
                 <div className='dynamic'>
-                    <div className='card'>
+                    <div className='cardd'>
                         <h1 className='heading'>Camera Name : {this.state.camera_name}</h1>
                         <p>Earth Date : {this.state.earth_date}</p>
                         <img className='img' src={this.state.image} alt='Generating Please Wait!!!' />

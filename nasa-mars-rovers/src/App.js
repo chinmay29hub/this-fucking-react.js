@@ -1,9 +1,9 @@
 // import logo from './logo.svg';
-import './App.css';
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Curiosity from './components/Curiosity';
 import Opportunity from './components/Opportunity';
 import Spirit from './components/Spirit';
+import AllPhotos from './components/AllPhotos';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +17,10 @@ const router = createBrowserRouter([
   {
       path : "/spirit",
       element : <Spirit />
+  },
+  {
+    path : "allphotos",
+    element : <AllPhotos />
   }
 ])
 
