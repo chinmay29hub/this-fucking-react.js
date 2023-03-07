@@ -14,12 +14,12 @@
 
 .app {
     height: 100%;
-    /* background: linear-gradient(180deg, #c061cb 0%, #5928ae 100%); */
-    /* background-size: cover;
+    /* background: linear-gradient(180deg, #c061cb 0%, #5928ae 100%);
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed; */
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     text-align: center;

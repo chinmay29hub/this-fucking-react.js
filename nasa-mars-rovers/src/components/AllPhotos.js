@@ -36,7 +36,7 @@ export default class AllPhotos extends Component {
                 images.forEach(element => {
                     (this.state.images).push(element)
                 });
-                console.log(this.state.images)
+                // console.log(this.state.images)
             })
             .catch(error => console.log(error))
     }
@@ -51,9 +51,6 @@ export default class AllPhotos extends Component {
 
   render() {
     const temp = this.state.images
-    var curr = new Date();
-    curr.setDate(curr.getDate());
-    var date = curr.toISOString().substring(0,10);
 
     return (
       <>
@@ -73,7 +70,7 @@ export default class AllPhotos extends Component {
       {temp.map((element, i, j, k ,l, m, n, p, f, o) => {
         return (
           <Col key={i} style={{ padding : "2%" }}>
-          <Card key={j} style={{ width: '18rem' }}>
+          <Card border='primary' bg='primary' text='dark' key={j} style={{ width: '18rem' }}>
       <Card.Img key={k} variant="top" src={element.img_src} />
       <Card.Body key={l}>
         <Card.Title key={m}>Rover : { element.rover.name }</Card.Title>
