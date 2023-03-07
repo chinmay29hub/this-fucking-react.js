@@ -5,7 +5,7 @@ const cors = require("cors")
 
 const io = new Server({
     cors : {
-        origin : "https://realtime-notifications-frontend.onrender.com/",
+        origin : "*",
     }
 });
 
