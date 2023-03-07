@@ -13,7 +13,7 @@ const App =() => {
 
   // console.log(user)
   useEffect(() => {
-    setSocket(io("https://notifications-socket-server.onrender.com:10000"));
+    setSocket(io(`${process.env.REACT_APP_SOCKET_SERVER}`));
     
   }, [])
 
