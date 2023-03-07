@@ -11,7 +11,7 @@ const io = new Server({
     }
 });
 
-io.use(cors())
+// io.use(cors())
 
 let onlineUsers = []
 
