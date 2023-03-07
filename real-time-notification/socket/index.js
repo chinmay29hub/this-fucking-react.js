@@ -1,5 +1,6 @@
 const { Server } = require("socket.io");
 const dotenv = require('dotenv').config();
+const cors = require("cors")
 
 
 const io = new Server({
@@ -7,6 +8,8 @@ const io = new Server({
         origin : "http://localhost:3000",
     }
 });
+
+io.use(cors())
 
 let onlineUsers = []
 

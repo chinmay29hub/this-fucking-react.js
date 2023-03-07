@@ -13,7 +13,7 @@ const App =() => {
 
   // console.log(user)
   useEffect(() => {
-    setSocket(io("http://localhost:5000"));
+    setSocket(io("https://notifications-socket-server.onrender.com:10000"));
     
   }, [])
 
