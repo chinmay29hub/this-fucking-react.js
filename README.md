@@ -9,3 +9,5 @@
 ## Photos Captured By Mars Rovers(Nasa Api) : [Live](https://chinmay29hub-nasa-mars.netlify.app/)
 
 ## Tic - Tac - Toe : [Live](https://chinmay29hub-tic-tac-toe.netlify.app/)
+
+## Peek Playlist (Spotify's Api) : [Live](https://chinmay29hub-peek-playlist.netlify.app/)
