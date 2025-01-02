@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -39,7 +39,13 @@ function App() {
       });
   }, []);
 
-  const search = useCallback(async () => {
+  useEffect(() => {
+    if (accessToken) {
+      search();
+    }
+  }, [accessToken]);
+
+  async function search() {
     if (!accessToken) {
       console.log("Access token is not available yet.");
       return;
@@ -75,13 +81,7 @@ function App() {
     )
       .then((response) => response.json())
       .then((data) => setAlbums(data.items));
-  }, [accessToken, searchInput]);
-
-  useEffect(() => {
-    if (accessToken) {
-      search();
-    }
-  }, [accessToken, search]);
+  }
 
   if (loading) {
     return (
