@@ -1,0 +1,40 @@
+/* Global Styles for Dark Mode */
+#root,
+body,
+html {
+  background-color: #181818; /* Spotify's background color */
+  color: #8e6d6d; /* White text */
+  font-family: "Roboto", sans-serif; /* Similar to Spotify's font */
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+button {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1db954; /* Spotify green */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
